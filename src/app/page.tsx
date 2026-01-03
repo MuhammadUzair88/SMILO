@@ -12,7 +12,7 @@ export default function Home() {
     <SignUpButton mode="modal">Hey SignUp</SignUpButton>
   </SignedOut>
   <SignedIn>
-    <SignOutButton>Hey Logout</SignOutButton>
+    <SignOutButton>Hey Bro Logout</SignOutButton>
   </SignedIn>
 </div>
 
