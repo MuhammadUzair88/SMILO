@@ -31,10 +31,35 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<ClerkProvider>
+<ClerkProvider
+appearance={{
+    variables: {
+      colorPrimary: "#b3b3b3",
+      colorBackground: "#0f0f0f",
+      colorInputBackground: "#181818",
+      colorText: "#f5f5f5",
+      colorTextSecondary: "#b3b3b3",
+    },
+    elements: {
+      socialButtonsBlockButton: {
+        backgroundColor: "#ffffff",
+        color: "#000000",
+        border: "1px solid #e5e7eb",
+      },
+      socialButtonsBlockButtonText: {
+        color: "#000000",
+        fontWeight: "500",
+      },
+      socialButtonsBlockButtonIcon: {
+        filter: "invert(0)",
+      },
+    },
+  }}
+
+>
       <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
         {children}
       </body>
