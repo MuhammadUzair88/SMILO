@@ -9,6 +9,7 @@ import {
   UserButton,
 } from '@clerk/nextjs'
 import "./globals.css";
+import UserSync from "@/components/UserSync";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,7 @@ appearance={{
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
+        <UserSync/>
         {children}
       </body>
     </html>
