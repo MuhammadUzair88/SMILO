@@ -1,4 +1,3 @@
-"use client";
 
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
@@ -10,9 +9,17 @@ import WhatToAsk from "@/components/landing/WhatToAsk";
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, SignOutButton } from "@clerk/clerk-react";
 import { SignUpButton } from "@clerk/nextjs";
-import Image from "next/image";
+import { currentUser } from "@clerk/nextjs/server";
 
-export default function Home() {
+import Image from "next/image";
+import { redirect } from "next/navigation";
+
+export default async function Home() {
+
+  // const user=await currentUser();
+  // if(user) redirect("/dashboard")
+
+
   return (
 <div className="min-h-screen bg-background">
   <Header/>

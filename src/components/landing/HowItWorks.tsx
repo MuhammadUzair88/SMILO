@@ -12,7 +12,6 @@ function HowItWorks() {
           <ZapIcon className="size-4 text-primary" />
           <span className="text-sm font-medium text-primary">Simple Process</span>
         </div>
-
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
           <span className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
             Three steps to
